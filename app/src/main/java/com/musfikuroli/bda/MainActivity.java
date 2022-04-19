@@ -9,11 +9,14 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -57,7 +60,15 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+        //Full Screens The App, Below 2 Lines
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
         setContentView(R.layout.activity_main);
+
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -127,13 +138,19 @@ public class MainActivity extends AppCompatActivity
                    nav_fullname.setText(name);
 
                    String email = snapshot.child("email").getValue().toString();
-                   nav_email.setText(email);
+                   nav_email.setText("Email: " + email);
 
                    String bloodgroup = snapshot.child("bloodgroup").getValue().toString();
-                   nav_bloodgroup.setText(bloodgroup);
+                   nav_bloodgroup.setText("Blood Group: " + bloodgroup);
 
                    String type = snapshot.child("type").getValue().toString();
-                   nav_type.setText(type);
+                   if(type.equals("donor")){
+                       nav_type.setText("Account Type: Donor");
+                   }
+                   if(type.equals("recipient")){
+                       nav_type.setText("Account Type: Recipient");
+                   }
+
 
 
                    if (snapshot.hasChild("profilepictureurl")){

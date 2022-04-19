@@ -98,7 +98,7 @@
                         android:id="@+id/registerIdNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Enter ID Number"
+                        android:hint="Enter NID Number"
                         android:inputType="number"
                         android:drawablePadding="10dp"
                         android:textColor="#000"

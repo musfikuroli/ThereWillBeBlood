@@ -94,7 +94,7 @@ public class UserAdapter  extends RecyclerView.Adapter<UserAdapter.ViewHolder>{
 
                                         String mEmail = user.getEmail();
                                         String mSubject = "BLOOD DONATION";
-                                        String mMessage = "Hello "+ nameOfTheReceiver+",\n"
+                                        String mMessage = "Hello, "+ nameOfTheReceiver+",\n"
                                                 + nameOfSender +" would like blood donation from you.\n"
                                                 +"\n"
                                                 +"Here's his/her Details:\n"

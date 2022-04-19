@@ -121,13 +121,13 @@ public class RecipientRegistrationActivity extends AppCompatActivity {
                     registerPhoneNumber.setError("Phone Number is required!");
                     return;
                 }
-                if (bloodGroup.equals("Select your blood group")){
+                if (bloodGroup.equals("Select Your Blood Group")){
                     Toast.makeText(RecipientRegistrationActivity.this, "Select Blood group", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 else {
-                    loader.setMessage("Registering you...");
+                    loader.setMessage("Registering your account...");
                     loader.setCanceledOnTouchOutside(false);
                     loader.show();
 

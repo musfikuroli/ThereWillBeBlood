@@ -56,11 +56,11 @@ public class ProfileActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
               if (snapshot.exists()){
                   type.setText(snapshot.child("type").getValue().toString());
-                  name.setText(snapshot.child("name").getValue().toString());
-                  idNumber.setText(snapshot.child("idnumber").getValue().toString());
-                  phoneNumber.setText(snapshot.child("phonenumber").getValue().toString());
-                  bloodGroup.setText(snapshot.child("bloodgroup").getValue().toString());
-                  email.setText(snapshot.child("email").getValue().toString());
+                  name.setText("Name: " + snapshot.child("name").getValue().toString());
+                  idNumber.setText("NID No: " + snapshot.child("idnumber").getValue().toString());
+                  phoneNumber.setText("Mobile: " + snapshot.child("phonenumber").getValue().toString());
+                  bloodGroup.setText("Blood Group: " + snapshot.child("bloodgroup").getValue().toString());
+                  email.setText("Email: " + snapshot.child("email").getValue().toString());
 
                   Glide.with(getApplicationContext()).load(snapshot.child("profilepictureurl").getValue().toString()).into(profileImage);
               }
