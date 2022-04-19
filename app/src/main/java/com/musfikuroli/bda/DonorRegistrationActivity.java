@@ -124,7 +124,7 @@ public class DonorRegistrationActivity extends AppCompatActivity {
                     registerPhoneNumber.setError("Phone Number is required!");
                     return;
                 }
-                if (bloodGroup.equals("Select your blood group")){
+                if (bloodGroup.equals("Select Your Blood Group")){
                     Toast.makeText(DonorRegistrationActivity.this, "Select Blood group", Toast.LENGTH_SHORT).show();
                     return;
                 }

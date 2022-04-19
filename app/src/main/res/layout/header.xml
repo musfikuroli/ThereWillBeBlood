@@ -7,7 +7,7 @@
     android:paddingRight="20dp"
     android:layout_width="match_parent"
     android:background="@drawable/header_background"
-    android:layout_height="210dp">
+    android:layout_height="230dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/nav_user_image"
@@ -23,7 +23,9 @@
         android:textSize="18sp"
         android:textColor="#fff"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="5dp"/>
 
     <TextView
         android:id="@+id/nav_user_email"

@@ -57,7 +57,9 @@ public class ProfileActivity extends AppCompatActivity {
               if (snapshot.exists()){
                   type.setText(snapshot.child("type").getValue().toString());
                   name.setText("Name: " + snapshot.child("name").getValue().toString());
+                  //idNumber.setText("NID No: " + snapshot.child("idnumber").getValue().toString());
                   idNumber.setText("NID No: " + snapshot.child("idnumber").getValue().toString());
+
                   phoneNumber.setText("Mobile: " + snapshot.child("phonenumber").getValue().toString());
                   bloodGroup.setText("Blood Group: " + snapshot.child("bloodgroup").getValue().toString());
                   email.setText("Email: " + snapshot.child("email").getValue().toString());

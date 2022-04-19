@@ -61,9 +61,9 @@ public class UserAdapter  extends RecyclerView.Adapter<UserAdapter.ViewHolder>{
          }
 
          holder.userEmail.setText(user.getEmail());
-         holder.phoneNumber.setText(user.getPhonenumber());
+         holder.phoneNumber.setText("Mobile: " + user.getPhonenumber());
          holder.userName.setText(user.getName());
-         holder.bloodGroup.setText(user.getBloodgroup());
+         holder.bloodGroup.setText("Blood Group: " + user.getBloodgroup());
 
         Glide.with(context).load(user.getProfilepictureurl()).into(holder.userProfileImage);
 
