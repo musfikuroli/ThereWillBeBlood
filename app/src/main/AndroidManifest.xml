@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.musfikuroli.bda">
 
     <application
@@ -18,6 +19,8 @@
         <activity android:name="com.musfikuroli.bda.DonorRegistrationActivity" />
         <activity android:name="com.musfikuroli.bda.SelectRegistrationActivity" />
         <activity android:name="com.musfikuroli.bda.LoginActivity" />
+        <activity android:name="com.musfikuroli.bda.ForgotPasswordActivity"
+            tools:ignore="DuplicateActivity" />
         <activity android:name="com.musfikuroli.bda.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
