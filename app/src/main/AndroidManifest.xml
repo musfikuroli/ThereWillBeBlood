@@ -21,8 +21,6 @@
         <activity android:name="com.musfikuroli.bda.LoginActivity" />
         <activity android:name="com.musfikuroli.bda.ForgotPasswordActivity"
             tools:ignore="DuplicateActivity" />
-        <activity android:name="com.musfikuroli.bda.AboutActivity"
-            tools:ignore="DuplicateActivity,Instantiatable" />
         <activity android:name="com.musfikuroli.bda.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
