@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "351092944853",
+    "firebase_url": "https://there-will-be-blood-e0607-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "there-will-be-blood-e0607",
+    "storage_bucket": "there-will-be-blood-e0607.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351092944853:android:a126d01cff216fb4af575c",
+        "android_client_info": {
+          "package_name": "com.musfikuroli.bda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351092944853-huhs627fg6v2o2b16bq5ddf22ntj91d4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.musfikuroli.bda",
+            "certificate_hash": "d2571d790211683eb55d04eeacebafffa1e43a03"
+          }
+        },
+        {
+          "client_id": "351092944853-rfaqaobholtkm90dm0hh2rg9ascg0mg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCosf-s_zlyTkgZjr-NtyyWajNVBSEKQSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351092944853-rfaqaobholtkm90dm0hh2rg9ascg0mg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
