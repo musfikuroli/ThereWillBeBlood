@@ -309,6 +309,11 @@ public class MainActivity extends AppCompatActivity
                 Intent intent2 = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent2);
                 break;
+            case R.id.about:
+                FirebaseAuth.getInstance().signOut();
+                Intent intent14 = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(intent14);
+                break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
